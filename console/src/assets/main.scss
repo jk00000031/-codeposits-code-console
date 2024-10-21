@@ -1,0 +1,18 @@
+@import url('./base.scss');
+
+// naive-ui
+.n-menu .n-menu-item {
+  margin-top: 2px;
+}
+
+// 动画时间
+
+.fade-enter-active,
+.fade-leave-active {
+  @apply transition;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  @apply absolute opacity-0;
+}

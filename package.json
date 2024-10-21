@@ -1,0 +1,11 @@
+{
+  "name": "@codeposits",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "commit": "node scripts/git_commit.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

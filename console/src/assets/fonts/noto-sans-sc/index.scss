@@ -1,0 +1,15 @@
+@use 'sass:list';
+
+$weightNames: 'Thin', 'ExtraLight', 'Light', 'Regular', 'Medium', 'SemiBold', 'Bold', 'ExtraBlod', 'Black';
+$weightNumbers: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+@each $i in $weightNames {
+  $index: list.index($weightNames, $i);
+  $number: list.nth($weightNumbers, $index);
+  @font-face {
+    font-family: 'NotoSansSC';
+    src: url('NotoSansSC-#{$i}.ttf') format('truetype');
+    font-weight: $number;
+    font-style: if($number == 400, normal, italic);
+  }
+}

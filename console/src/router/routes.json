@@ -1,0 +1,22 @@
+[
+  {
+    "routerPath": "/",
+    "name": "oi.welcome",
+    "title": "欢迎页",
+    "componentPath": "Index",
+    "requireAuth": true,
+    "showAside": true,
+    "icon": "mdi:robot-outline",
+    "parentName": "oi.main"
+  },
+  {
+    "routerPath": "/notification",
+    "name": "oi.notification",
+    "title": "消息通知",
+    "componentPath": "Notification",
+    "requireAuth": false,
+    "showAside": false,
+    "icon": "hugeicons:notification-01",
+    "parentName": "oi.main"
+  }
+]
